@@ -19,7 +19,7 @@ const ProjectCard = ({ category, title, images, index, id, onProjectClick, delay
         opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10" />
       
       <div className="bg-purple-600 h-48 w-full overflow-hidden">
-        <img src={`${process.env.PUBLIC_URL}${images[0]}`} alt={title} 
+        <img src={images[0]} alt={title} 
           className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"/>
       </div>
       
@@ -55,7 +55,11 @@ const ProjectDetails = ({ project, onBack }) => {
 
   useEffect(() => {
     setIsVisible(true);
-  }, []);
+    window.history.pushState({}, '', `/projects/${project.title.toLowerCase().replace(/\s+/g, '-')}`);
+    return () => {
+      window.history.pushState({}, '', '/');
+    };
+  }, [project.title]);
 
   return (
     <div className={`min-h-screen bg-black text-white py-20 px-6
@@ -104,7 +108,7 @@ const ProjectDetails = ({ project, onBack }) => {
             {project.images.map((image, index) => (
               <div key={index} className="overflow-hidden rounded-lg shadow-2xl
                 transform transition-all duration-500 hover:scale-105">
-                <img src={`${process.env.PUBLIC_URL}${image}`} alt={`${project.title} view ${index + 1}`}
+                <img src={image} alt={`${project.title} view ${index + 1}`}
                   className="w-full h-64 object-cover" />
               </div>
             ))}
@@ -139,15 +143,15 @@ const Portfolio = () => {
         "Measuring ROI: Tracking campaign performance and ensuring marketing spend translates into real business growth."
       ],
       images: [
-        "/images/marketing/dm1.jpg",
-        "/images/marketing/dm2.jpg",
-        "/images/marketing/dm3.jpg"
+        "https://www.mindmingles.com/wp-content/uploads/2020/01/The-Use-of-Animation-in-Digital-Marketing-2.jpg",  // Main image for Digital Marketing
+        "https://digitallearning.eletsonline.com/wp-content/uploads/2019/04/Digital-Marketing.jpg",  // Second image for Digital Marketing
+        "https://emeritus.org/in/wp-content/uploads/sites/3/2022/02/digital-marketing-2.jpg.optimal.jpg"   // Third image for Digital Marketing
       ]
     },
     { 
       id: 2, 
       category: 'COMMUNICATION', 
-      title: 'Professional Communication',
+      title: 'Profesional Communication',
       description: "Effective communication is the foundation of success, enabling individuals and businesses to convey ideas clearly, build relationships, and establish credibility. It includes verbal, written, and non-verbal skills essential for professional growth.",
       challenges: [
         "Clarity & Precision: Crafting messages that are clear, concise, and impactful.",
@@ -155,9 +159,9 @@ const Portfolio = () => {
         "Overcoming Barriers: Handling language, tone, and perception challenges effectively."
       ],
       images: [
-        "/images/communication/comm1.jpg",
-        "/images/communication/comm2.jpg",
-        "/images/communication/comm3.jpg"
+        "https://d5c1j5k5drfk7.cloudfront.net/wp-content/uploads/2024/01/Hybrid-workplace-communication-illustration.jpg",  // Main image for Communication
+        "https://centrepointschools.com/blogs/wp-content/uploads/2024/08/communication-skills.png",  // Second image for Communication
+        "https://www.iiba.org/contentassets/b50a9d74a6c64f87910ced487fda24d5/mastering-the-art-of-communication-blog-header.jpg"   // Third image for Communication
       ]
     },
     {
@@ -172,9 +176,43 @@ const Portfolio = () => {
         "Third-Party Service Integration: Seamlessly connecting APIs for payment gateways, analytics, and logistics."
       ],
       images: [
-        "/images/development/mern1.jpg",
-        "/images/development/mern2.jpg",
-        "/images/development/mern3.jpg"
+        "https://i.pinimg.com/736x/d0/79/81/d079816c1e699834fd1f01eceeddee8e.jpg",  // Main image for MERN
+        "https://www.optimalvirtualemployee.com/wp-content/uploads/2022/12/Web-Developer-skill-1200x682.jpg",  // Second image for MERN
+        " https://bairesdev.mo.cloudinary.net/blog/2023/09/How-Many-Web-Developers-in-the-World-1.jpg?tx=w_1920,q_auto"   // Third image for MERN
+      ]
+    },
+    {
+      id: 4,
+      category: 'MARKETING',
+      title: 'Digital Marketing Campaign',
+      description: "Comprehensive digital marketing strategy including social media, email campaigns, and SEO optimization to increase brand visibility and engagement.",
+      challenges: [
+        "Creating engaging content strategy",
+        "Optimizing conversion rates",
+        "Managing multi-channel campaigns",
+        "Analyzing performance metrics"
+      ],
+      images: [
+        "path/to/campaign-image1.jpg",  // Main image for Campaign
+        "path/to/campaign-image2.jpg",  // Second image for Campaign
+        "path/to/campaign-image3.jpg"   // Third image for Campaign
+      ]
+    },
+    {
+      id: 5,
+      category: 'UI/UX',
+      title: 'Mobile App Design',
+      description: "User-centered mobile application design focusing on intuitive navigation, accessibility, and engaging user experience across multiple platforms.",
+      challenges: [
+        "Creating consistent cross-platform experience",
+        "Optimizing app performance",
+        "Implementing gesture-based interactions",
+        "Ensuring accessibility compliance"
+      ],
+      images: [
+        "path/to/app-image1.jpg",  // Main image for App Design
+        "path/to/app-image2.jpg",  // Second image for App Design
+        "path/to/app-image3.jpg"   // Third image for App Design
       ]
     }
   ];
