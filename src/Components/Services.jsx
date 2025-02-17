@@ -55,7 +55,7 @@ const Services = () => {
     },
     {
       icon: "💻",
-      title: "Web development",
+      title: "Full Stack Developer",
       description: "Integer ante non nunc, eget est justo vel semper nunc. Lacus"
     },
     {
@@ -75,7 +75,7 @@ const Services = () => {
     },
     {
       icon: "👥",
-      title: "User testing",
+      title: "Communication",
       description: "Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est."
     }
   ];

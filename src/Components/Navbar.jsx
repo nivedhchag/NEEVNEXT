@@ -1,19 +1,101 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+
+const Logo = () => (
+  <svg 
+    className="h-10 w-10" 
+    viewBox="0 0 80 80" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Base Circle */}
+    <circle 
+      cx="40" 
+      cy="40" 
+      r="36" 
+      className="fill-[#f4f4f4] opacity-10"
+    />
+    
+    {/* Graduate Figure - More stylized */}
+    <path
+      d="M40 24C38 24 32 35 32 48C32 56 35 60 40 60C45 60 48 56 48 48C48 35 42 24 40 24Z"
+      fill="#008080"
+      className="drop-shadow-lg"
+    />
+    
+    {/* Graduation Cap - More detailed */}
+    <path
+      d="M30 28L40 22L50 28L40 34L30 28Z"
+      fill="#008080"
+      className="drop-shadow-lg"
+    />
+    <path
+      d="M40 34V38"
+      stroke="#008080"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+    
+    {/* Star - More dynamic */}
+    <path
+      d="M40 15L44 25L54 25L46 32L49 42L40 36L31 42L34 32L26 25L36 25L40 15Z"
+      fill="#FF6B00"
+      className="drop-shadow-lg"
+    />
+    
+    {/* Decorative Circle */}
+    <circle 
+      cx="40" 
+      cy="40" 
+      r="36" 
+      stroke="#008080" 
+      strokeWidth="2"
+      strokeDasharray="4 4"
+      className="opacity-20"
+    />
+    
+    {/* Accent Lines */}
+    <path
+      d="M20 40C20 30 30 20 40 20"
+      stroke="#FF6B00"
+      strokeWidth="2"
+      strokeLinecap="round"
+      className="opacity-20"
+    />
+    <path
+      d="M60 40C60 50 50 60 40 60"
+      stroke="#FF6B00"
+      strokeWidth="2"
+      strokeLinecap="round"
+      className="opacity-20"
+    />
+  </svg>
+);
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      navigate('/home');
+    }
+  }, [location.pathname, navigate]);
 
   const navItems = [
     { path: "/home", label: "Home" },
     { path: "/services", label: "Services" },
     { path: "/work", label: "Work" },
-    { path: "/about", label: "#", label: "About" }
   ];
 
   const isActive = (path) => location.pathname === path;
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    navigate('/home');
+  };
 
   return (
     <nav className="fixed w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
@@ -21,13 +103,20 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link 
-              to="/" 
-              className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-orange-400 bg-clip-text text-transparent"
+              to="/home" 
+              onClick={handleLogoClick}
+              className="flex items-center gap-3 group"
             >
-              Agency
+              <div className="transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-[360deg]">
+                <Logo />
+              </div>
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-orange-400 bg-clip-text text-transparent">
+                NEEVNEXT
+              </span>
             </Link>
           </div>
           
+          {/* Rest of your navbar code remains the same */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link 

@@ -40,7 +40,6 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="p-6">
-          {/* Rest of the modal content remains the same */}
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-3xl font-bold">Let's Connect</h2>
             <button 
@@ -112,15 +111,15 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <Mail className="text-orange-500" />
-                    <p>hello@company.com</p>
+                    <p>chagananivedhan@gmail.com</p>
                   </div>
                   <div className="flex items-center gap-4">
                     <Phone className="text-orange-500" />
-                    <p>+1 (555) 000-0000</p>
+                    <p>+91 9701055166</p>
                   </div>
                   <div className="flex items-center gap-4">
                     <MapPin className="text-orange-500" />
-                    <p>123 Business Ave, Suite 100<br />New York, NY 10001</p>
+                    <p>Shop-No -30<br />Kurnool, Birla Compound 518002</p>
                   </div>
                 </div>
               </div>
@@ -149,20 +148,18 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className="w-full h-96 bg-gradient-to-br from-purple-400 via-orange-500 to-purple-600">
+            <div className="w-full h-96 overflow-hidden rounded-lg shadow-xl">
               <img 
-                src="/api/placeholder/600/400" 
+                src="https://www.accurate.in/img/college/1689751820-knowledge.jpg" 
                 alt="Person with binoculars" 
-                className="w-full h-full object-cover mix-blend-overlay"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-white">Why choose us</h2>
             <p className="text-gray-400">
-              Commodo diam vulputate dui proin quis enim nibh. Non integer ac 
-              libero facilisis hendrerit a at. Nisi sem ut sed sed faucibus at eu elit. 
-              Morbi aliquam porttitor mattis consequat neque, tellus blandit.
+              We provide expert-led training in Digital Marketing, Full-Stack Development (MERN), and Professional English, ensuring students gain real-world skills for career success. Our hands-on learning approach, personalized guidance, and industry-relevant curriculum set us apart, helping you stay ahead in a competitive world.
             </p>
             <button 
               onClick={() => setIsModalOpen(true)}

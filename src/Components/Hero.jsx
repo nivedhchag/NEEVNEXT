@@ -36,7 +36,7 @@ const Hero = () => {
                 }
               `}
             >
-              Attract
+              Fueling 
             </div>
             
             <div 
@@ -51,7 +51,7 @@ const Hero = () => {
               `}
             >
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500">
-                New Leads
+              Ambitions with 
               </span>
             </div>
             
@@ -66,7 +66,7 @@ const Hero = () => {
                 }
               `}
             >
-              Like Never Before
+              The Right Skills
             </div>
           </h1>
 
@@ -78,7 +78,7 @@ const Hero = () => {
               : 'opacity-0 translate-y-10'
             }
           `}>
-            Transform your digital presence with cutting-edge strategies that turn potential into powerful connections.
+            Transforming Your Future with Expert Digital Marketing, Full-Stack Development, and Professional English.
           </p>
 
           <div className={`
