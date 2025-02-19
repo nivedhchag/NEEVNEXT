@@ -51,32 +51,32 @@ const Services = () => {
     {
       icon: "🎨",
       title: "Branding",
-      description: "Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices"
+      description: "Crafting identities that leave a lasting impression."
     },
     {
       icon: "💻",
       title: "Full Stack Developer",
-      description: "Integer ante non nunc, eget est justo vel semper nunc. Lacus"
+      description: "Building seamless web experiences from front to back."
     },
     {
       icon: "📱",
       title: "Digital marketing",
-      description: "Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est."
+      description: "Driving engagement, growth, and success through digital strategies."
     },
     {
       icon: "📱",
       title: "Mobile App",
-      description: "Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices"
+      description: "Transforming ideas into high-performing mobile experiences."
     },
     {
       icon: "🔍",
       title: "SEO",
-      description: "Integer ante non nunc, eget est justo vel semper nunc. Lacus"
+      description: "Boosting visibility, ranking higher, and growing your brand organically."
     },
     {
       icon: "👥",
       title: "Communication",
-      description: "Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est."
+      description: "Empowering connections through clear and impactful communication."
     }
   ];
 
@@ -93,9 +93,7 @@ const Services = () => {
         <p className="text-gray-400 text-center max-w-3xl mx-auto mb-12 
           transform transition-transform duration-500 
           hover:translate-x-2">
-          Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat 
-          scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a 
-          tincidunt.
+          We offer expert-led courses in Digital Marketing, Full Stack Development (MERN), and English Communication to help students build career-ready skills. Our hands-on training ensures real-world experience and practical learning. Join us to enhance your knowledge and unlock new opportunities!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
