@@ -64,14 +64,14 @@ const Services = () => {
       description: "Driving engagement, growth, and success through digital strategies."
     },
     {
-      icon: "📱",
-      title: "Mobile App",
-      description: "Transforming ideas into high-performing mobile experiences."
+      icon: "⚡",
+      title: "Scrum Management",
+      description: "Delivering value through agile methodologies and effective team collaboration."
     },
     {
-      icon: "🔍",
-      title: "SEO",
-      description: "Boosting visibility, ranking higher, and growing your brand organically."
+      icon: "🔒",
+      title: "Cybersecurity",
+      description: "Protecting digital assets with advanced security solutions and strategies."
     },
     {
       icon: "👥",

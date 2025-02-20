@@ -15,6 +15,16 @@ import mern1 from './images/development/mern1.jpg';
 import mern2 from './images/development/mern2.avif';
 import mern3 from './images/development/mern3.jpg';
 
+// Import Scrum images
+import scrum1 from './images/scrum/scrum1.png';
+import scrum2 from './images/scrum/scrum2.png';
+import scrum3 from './images/scrum/scrum3.png';
+
+// Import Cybersecurity images
+import cyber1 from './images/cybersecurity/cyber1.jpeg';
+import cyber2 from './images/cybersecurity/cyber2.jpg';
+import cyber3 from './images/cybersecurity/cyber3.jpeg';
+
 const ProjectCard = ({ category, title, images, index, id, onProjectClick, delay = true }) => {
   const [isVisible, setIsVisible] = useState(!delay);
 
@@ -179,6 +189,32 @@ const Portfolio = () => {
         "Third-Party Service Integration: Seamlessly connecting APIs for payment gateways, analytics, and logistics."
       ],
       images: [mern1, mern2, mern3]
+    },
+    {
+      id: 4,
+      category: 'AGILE',
+      title: 'SCRUM MANAGEMENT',
+      description: "Implementing agile methodologies through Scrum framework to deliver high-value products efficiently. Our approach focuses on iterative development, team collaboration, and continuous improvement to maximize project success and stakeholder satisfaction.",
+      challenges: [
+        "Team Coordination: Facilitating effective communication and collaboration among distributed teams.",
+        "Sprint Planning: Balancing team capacity with stakeholder expectations for realistic deliverables.",
+        "Adaptability: Managing changing requirements while maintaining project momentum and team morale.",
+        "Metrics & Reporting: Tracking and communicating progress effectively to all stakeholders."
+      ],
+      images: [scrum1, scrum2, scrum3]
+    },
+    {
+      id: 5,
+      category: 'SECURITY',
+      title: 'CYBERSECURITY SOLUTIONS',
+      description: "Comprehensive cybersecurity services protecting digital assets through advanced threat detection, prevention, and response strategies. We implement robust security measures to safeguard organizations against evolving cyber threats and ensure business continuity.",
+      challenges: [
+        "Threat Evolution: Staying ahead of emerging cyber threats and attack vectors.",
+        "Security Integration: Implementing security measures without disrupting business operations.",
+        "Compliance Management: Ensuring adherence to multiple regulatory frameworks and standards.",
+        "Incident Response: Developing and maintaining effective incident response plans and procedures."
+      ],
+      images: [cyber1, cyber2, cyber3]
     }
   ];
 
@@ -204,7 +240,7 @@ const Portfolio = () => {
             Some pieces of our work
           </h2>
           <p className="text-gray-400 max-w-2xl transform transition-transform duration-500 hover:translate-x-2">
-            We have successfully delivered digital marketing campaigns that boost brand visibility, full-stack web applications with seamless user experiences, and professional English training to enhance communication skills. Our work reflects innovation, efficiency, and a commitment to excellence across all our services.
+            We deliver excellence across multiple domains: from strategic digital marketing and professional communication to robust full-stack development, agile project management, and cutting-edge cybersecurity solutions. Our comprehensive expertise ensures your success in today's dynamic digital landscape.
           </p>
         </div>
 
