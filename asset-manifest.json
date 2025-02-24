@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://nivedhchag.github.io/NEEVNEXT/static/css/main.d82f83ef.css",
-    "main.js": "https://nivedhchag.github.io/NEEVNEXT/static/js/main.f983486b.js",
+    "main.css": "https://nivedhchag.github.io/NEEVNEXT/static/css/main.1c37b307.css",
+    "main.js": "https://nivedhchag.github.io/NEEVNEXT/static/js/main.9be5ce85.js",
     "static/js/453.28e46ecb.chunk.js": "https://nivedhchag.github.io/NEEVNEXT/static/js/453.28e46ecb.chunk.js",
     "static/media/dm1.jpg": "https://nivedhchag.github.io/NEEVNEXT/static/media/dm1.b3274668dee0f95c6ff1.jpg",
     "static/media/comm1.png": "https://nivedhchag.github.io/NEEVNEXT/static/media/comm1.197fdbc6bd2a61772457.png",
@@ -13,12 +13,12 @@
     "static/media/comm3.webp": "https://nivedhchag.github.io/NEEVNEXT/static/media/comm3.fcaf11791e07e5e3b120.webp",
     "static/media/mern1.jpg": "https://nivedhchag.github.io/NEEVNEXT/static/media/mern1.7a7d7dc15c3ccf27c620.jpg",
     "index.html": "https://nivedhchag.github.io/NEEVNEXT/index.html",
-    "main.d82f83ef.css.map": "https://nivedhchag.github.io/NEEVNEXT/static/css/main.d82f83ef.css.map",
-    "main.f983486b.js.map": "https://nivedhchag.github.io/NEEVNEXT/static/js/main.f983486b.js.map",
+    "main.1c37b307.css.map": "https://nivedhchag.github.io/NEEVNEXT/static/css/main.1c37b307.css.map",
+    "main.9be5ce85.js.map": "https://nivedhchag.github.io/NEEVNEXT/static/js/main.9be5ce85.js.map",
     "453.28e46ecb.chunk.js.map": "https://nivedhchag.github.io/NEEVNEXT/static/js/453.28e46ecb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d82f83ef.css",
-    "static/js/main.f983486b.js"
+    "static/css/main.1c37b307.css",
+    "static/js/main.9be5ce85.js"
   ]
 }
