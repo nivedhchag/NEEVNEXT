@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "https://nivedhchag.github.io/NEEVNEXT/static/css/main.1c37b307.css",
-    "main.js": "https://nivedhchag.github.io/NEEVNEXT/static/js/main.9be5ce85.js",
+    "main.css": "https://nivedhchag.github.io/NEEVNEXT/static/css/main.5e63b3c7.css",
+    "main.js": "https://nivedhchag.github.io/NEEVNEXT/static/js/main.aae8cfb7.js",
     "static/js/453.28e46ecb.chunk.js": "https://nivedhchag.github.io/NEEVNEXT/static/js/453.28e46ecb.chunk.js",
+    "static/media/apt2.png": "https://nivedhchag.github.io/NEEVNEXT/static/media/apt2.7f92710ad7ecefb5e716.png",
     "static/media/dm1.jpg": "https://nivedhchag.github.io/NEEVNEXT/static/media/dm1.b3274668dee0f95c6ff1.jpg",
     "static/media/comm1.png": "https://nivedhchag.github.io/NEEVNEXT/static/media/comm1.197fdbc6bd2a61772457.png",
     "static/media/dm3.jpg": "https://nivedhchag.github.io/NEEVNEXT/static/media/dm3.fd64827022d26f9f8f70.jpg",
@@ -11,14 +12,16 @@
     "static/media/comm2.jpg": "https://nivedhchag.github.io/NEEVNEXT/static/media/comm2.47424e72cd6cad1c706c.jpg",
     "static/media/mern2.avif": "https://nivedhchag.github.io/NEEVNEXT/static/media/mern2.611999ef532f73643257.avif",
     "static/media/comm3.webp": "https://nivedhchag.github.io/NEEVNEXT/static/media/comm3.fcaf11791e07e5e3b120.webp",
+    "static/media/apt1.jpg": "https://nivedhchag.github.io/NEEVNEXT/static/media/apt1.05dfe06ddcf0f5829703.jpg",
     "static/media/mern1.jpg": "https://nivedhchag.github.io/NEEVNEXT/static/media/mern1.7a7d7dc15c3ccf27c620.jpg",
+    "static/media/apt3.webp": "https://nivedhchag.github.io/NEEVNEXT/static/media/apt3.cae7d115c33e10c0e9df.webp",
     "index.html": "https://nivedhchag.github.io/NEEVNEXT/index.html",
-    "main.1c37b307.css.map": "https://nivedhchag.github.io/NEEVNEXT/static/css/main.1c37b307.css.map",
-    "main.9be5ce85.js.map": "https://nivedhchag.github.io/NEEVNEXT/static/js/main.9be5ce85.js.map",
+    "main.5e63b3c7.css.map": "https://nivedhchag.github.io/NEEVNEXT/static/css/main.5e63b3c7.css.map",
+    "main.aae8cfb7.js.map": "https://nivedhchag.github.io/NEEVNEXT/static/js/main.aae8cfb7.js.map",
     "453.28e46ecb.chunk.js.map": "https://nivedhchag.github.io/NEEVNEXT/static/js/453.28e46ecb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c37b307.css",
-    "static/js/main.9be5ce85.js"
+    "static/css/main.5e63b3c7.css",
+    "static/js/main.aae8cfb7.js"
   ]
 }
