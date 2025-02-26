@@ -41,7 +41,7 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
       <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="p-6">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-3xl font-bold">Let's Connect</h2>
+            <h2 className="text-3xl font-bold text-gray-800">Let's Connect</h2>
             <button 
               onClick={() => setIsOpen(false)}
               className="text-gray-500 hover:text-gray-700"
@@ -58,47 +58,47 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
             <div className="space-y-6">
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium mb-2">Name</label>
+                  <label className="block text-sm font-medium mb-2 text-gray-700">Name</label>
                   <input
                     type="text"
                     required
-                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-teal-500"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Email</label>
+                  <label className="block text-sm font-medium mb-2 text-gray-700">Email</label>
                   <input
                     type="email"
                     required
-                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-teal-500"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Phone</label>
+                  <label className="block text-sm font-medium mb-2 text-gray-700">Phone</label>
                   <input
                     type="tel"
-                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-teal-500"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Message</label>
+                  <label className="block text-sm font-medium mb-2 text-gray-700">Message</label>
                   <textarea
                     required
                     rows="4"
-                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-teal-500"
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-8 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors"
+                  className="w-full px-8 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors"
                 >
                   Send Message
                 </button>
@@ -107,29 +107,29 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
 
             <div className="bg-gray-50 p-8 rounded-lg space-y-8">
               <div>
-                <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
+                <h3 className="text-xl font-semibold mb-6 text-gray-800">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <Mail className="text-orange-500" />
-                    <p>chagananivedhan@gmail.com</p>
+                    <Mail className="text-teal-500" />
+                    <p className="text-gray-600">chagananivedhan@gmail.com</p>
                   </div>
                   <div className="flex items-center gap-4">
-                    <Phone className="text-orange-500" />
-                    <p>+91 9701055166</p>
+                    <Phone className="text-teal-500" />
+                    <p className="text-gray-600">+91 9701055166</p>
                   </div>
                   <div className="flex items-center gap-4">
-                    <MapPin className="text-orange-500" />
-                    <p>Shop-No -30<br />Kurnool, Birla Compound 518002</p>
+                    <MapPin className="text-teal-500" />
+                    <p className="text-gray-600">Shop-No -30<br />Kurnool, Birla Compound 518002</p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-6">Office Hours</h3>
+                <h3 className="text-xl font-semibold mb-6 text-gray-800">Office Hours</h3>
                 <div className="space-y-2">
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p>Saturday: 10:00 AM - 2:00 PM</p>
-                  <p>Sunday: Closed</p>
+                  <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                  <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                  <p className="text-gray-600">Sunday: Closed</p>
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@ const WhyChooseUs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
@@ -157,14 +157,14 @@ const WhyChooseUs = () => {
             </div>
           </div>
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-white">Why choose us</h2>
-            <p className="text-gray-400">
+            <h2 className="text-4xl font-bold text-gray-800">Why Choose Us</h2>
+            <p className="text-gray-600">
               We provide expert-led training in Digital Marketing, Full-Stack Development (MERN), and Professional English, ensuring students gain real-world skills for career success. Our hands-on learning approach, personalized guidance, and industry-relevant curriculum set us apart, helping you stay ahead in a competitive world.
             </p>
             <button 
               onClick={() => setIsModalOpen(true)}
-              className="px-8 py-3 bg-transparent border border-orange-500 text-orange-500 
-                       rounded-full hover:bg-orange-500 hover:text-white transition-colors"
+              className="px-8 py-3 bg-transparent border border-teal-500 text-teal-500 
+                      rounded-full hover:bg-teal-500 hover:text-white transition-colors"
             >
               LET'S CONNECT
             </button>

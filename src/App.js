@@ -11,6 +11,7 @@ import './index.css';
 function App() {
   const HomePage = () => (
     <>
+    <Navbar/>
       <Hero />
       <Services />
       <WhyChooseUs/>

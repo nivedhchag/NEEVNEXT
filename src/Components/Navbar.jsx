@@ -14,7 +14,7 @@ const Logo = () => (
       cx="40" 
       cy="40" 
       r="36" 
-      className="fill-[#f4f4f4] opacity-10"
+      className="fill-white opacity-10"
     />
     
     {/* Graduate Figure - More stylized */}
@@ -98,8 +98,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed w-full bg-white shadow-sm z-50 border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link 
@@ -107,31 +107,30 @@ const Navbar = () => {
               onClick={handleLogoClick}
               className="flex items-center gap-3 group"
             >
-              <div className="transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-[360deg]">
+              <div className="transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-[360deg]">
                 <Logo />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-orange-400 bg-clip-text text-transparent">
+              <span className="text-2xl font-light tracking-tight bg-gradient-to-r from-teal-500 to-orange-400 bg-clip-text text-transparent">
                 NEEVNEXT
               </span>
             </Link>
           </div>
           
-          {/* Rest of your navbar code remains the same */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link 
                 key={item.path} 
                 to={item.path} 
                 className={`
-                  relative text-gray-300 hover:text-white 
-                  transition-all duration-300 group
-                  ${isActive(item.path) ? 'text-white' : ''}
+                  relative text-gray-600 hover:text-teal-600 
+                  transition-all duration-300 text-sm font-medium tracking-wide
+                  ${isActive(item.path) ? 'text-teal-600' : ''}
                 `}
               >
                 {item.label}
                 <span 
                   className={`
-                    absolute -bottom-2 left-0 w-full h-0.5 bg-orange-500 
+                    absolute -bottom-1 left-0 w-full h-0.5 bg-orange-400 
                     transform scale-x-0 origin-left 
                     transition-transform duration-300 
                     group-hover:scale-x-100
@@ -143,9 +142,9 @@ const Navbar = () => {
             
             <Link 
               to="/contact" 
-              className="bg-orange-500 text-white px-6 py-2 rounded-full 
-              hover:bg-orange-600 transition-all duration-300 
-              transform hover:scale-105 active:scale-95"
+              className="bg-teal-500 text-white px-6 py-2 rounded-full 
+              hover:bg-teal-600 transition-all duration-300 text-sm font-medium tracking-wide
+              transform hover:scale-105 active:scale-95 shadow-md"
             >
               Contact Us
             </Link>
@@ -154,7 +153,8 @@ const Navbar = () => {
           <div className="md:hidden">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)} 
-              className="text-gray-300 transform transition-transform active:scale-90"
+              className="text-teal-600 transform transition-transform active:scale-90 p-1"
+              aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -163,20 +163,20 @@ const Navbar = () => {
       </div>
       
       {isMenuOpen && (
-        <div className="md:hidden bg-black/95 border-b border-gray-800 animate-slide-in-top">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="md:hidden bg-white/98 backdrop-blur-sm shadow-lg animate-slide-in-top">
+          <div className="px-4 pt-2 pb-4 space-y-2">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 className={`
-                  block px-3 py-2 
-                  transition-all duration-300
+                  block px-4 py-3 rounded-lg
+                  transition-all duration-300 text-sm font-medium tracking-wide
                   ${isActive(item.path) 
-                    ? 'bg-orange-500/20 text-white' 
-                    : 'text-gray-300'
+                    ? 'bg-teal-50 text-teal-600' 
+                    : 'text-gray-600'
                   }
-                  hover:bg-orange-500/20 hover:text-white
+                  hover:bg-teal-50 hover:text-teal-600
                 `}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -186,10 +186,10 @@ const Navbar = () => {
             
             <Link
               to="/contact"
-              className="block w-full mt-2 bg-orange-500 text-white 
-              px-6 py-2 rounded-full text-center
-              hover:bg-orange-600 transition-all duration-300
-              transform hover:scale-105 active:scale-95"
+              className="block w-full mt-4 bg-teal-500 text-white 
+              px-6 py-3 rounded-full text-center text-sm font-medium tracking-wide
+              hover:bg-teal-600 transition-all duration-300
+              transform hover:scale-105 active:scale-95 shadow-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
