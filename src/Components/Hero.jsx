@@ -6,7 +6,7 @@ const Hero = () => {
   useEffect(() => {
     const timer1 = setTimeout(() => setAnimationStage(1), 100);
     const timer2 = setTimeout(() => setAnimationStage(2), 600);
-    
+
     return () => {
       clearTimeout(timer1);
       clearTimeout(timer2);
@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section className="relative bg-white text-gray-900 min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-white via-teal-100 to-white opacity-90 z-0"></div>
-      
+
       <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 w-full">
         <div className="text-center space-y-6">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
@@ -49,7 +49,21 @@ const Hero = () => {
           `}>
             Transforming Your Future with Expert Digital Marketing, Full-Stack Development, and Professional English.
           </p>
-          <a href="https://www.teacheron.com/tutor/bMrt?r=bMrt" target="_blank" style="display: inline-block;"><img src="https://www.teacheron.com/resources/assets/img/badges/viewMyProfile.png" style="width: 336px !important; height: 144px !important"></a>
+
+          {/* TeacherOn badge */}
+          <div className="flex justify-center mt-6">
+            <a
+              href="https://www.teacheron.com/tutor/bMrt?r=bMrt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.teacheron.com/resources/assets/img/badges/viewMyProfile.png"
+                alt="View My Profile on TeacherOn"
+                style={{ width: '336px', height: '144px' }}
+              />
+            </a>
+          </div>
 
           <div className={`
             flex justify-center space-x-4 mt-8
