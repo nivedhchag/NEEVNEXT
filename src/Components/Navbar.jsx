@@ -98,10 +98,12 @@ const Navbar = () => {
   };
 
   return (
+
     <nav className="fixed w-full bg-white shadow-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
+            <a href="https://www.teacheron.com/tutor/bMrt?r=bMrt" target="_blank" style="display: inline-block;"><img src="https://www.teacheron.com/resources/assets/img/badges/viewMyProfile.png" style="width: 336px !important; height: 144px !important"></a>
             <Link 
               to="/home" 
               onClick={handleLogoClick}
