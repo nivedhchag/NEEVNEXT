@@ -49,6 +49,7 @@ const Hero = () => {
           `}>
             Transforming Your Future with Expert Digital Marketing, Full-Stack Development, and Professional English.
           </p>
+          <a href="https://www.teacheron.com/tutor/bMrt?r=bMrt" target="_blank" style="display: inline-block;"><img src="https://www.teacheron.com/resources/assets/img/badges/viewMyProfile.png" style="width: 336px !important; height: 144px !important"></a>
 
           <div className={`
             flex justify-center space-x-4 mt-8
